@@ -1,0 +1,50 @@
+.image-set-container {
+  display: grid;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  grid-template-columns: 143px 143px 143px;
+  margin-top: 10px;
+}
+
+.moment-item-container {
+  height: auto;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.avatar-container {
+  width: 50px;
+  height: 100%;
+}
+
+.moment-content-container {
+  height: 100%;
+}
+
+.moment-writing-container {
+  width: 450px;
+  height: auto;
+  font-size: 16px;
+  margin-top: -10px;
+  word-break: break-word;
+}
+
+.outer-item-container {
+  margin-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.comment-container {
+  background-color: #f5f5f5;
+  padding: 10px;
+  word-break: break-word;
+}
+
+.like-container {
+  padding: 0 10px;
+  background-color: #f5f5f5;
+  word-break: break-word;
+}

@@ -1,0 +1,210 @@
+#root {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  min-width: 300px;
+}
+
+.home-page-header {
+  background: linear-gradient(90deg, purple 15%, blue);
+  color: #fff;
+  padding: 0 10px;
+  height: 8%;
+  display: flex;
+  align-items: center;
+}
+
+.register-card {
+  background-color: #fff;
+  width: 40%;
+  height: 60%;
+  box-shadow: 0 0 20px #ddd;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.register-card-title {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.bubble-background {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(96, 206, 22);
+  position: absolute;
+  left: 0%;
+  top: 8%;
+  border-radius: 50%;
+  animation-name: bubble;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.bubble-background2 {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  position: absolute;
+  right: 0%;
+  top: 8%;
+  border-radius: 50%;
+  animation-name: bubble;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.bubble-background3 {
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+  position: absolute;
+  left: 25%;
+  top: 8%;
+  border-radius: 50%;
+  animation-name: bubble;
+  animation-duration: 8s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+.bubble-background4 {
+  width: 300px;
+  height: 300px;
+  background-color: cyan;
+  position: absolute;
+  right: 25%;
+  top: 8%;
+  border-radius: 50%;
+  animation-name: bubble;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 650px) {
+  .register-card {
+    background-color: #fff;
+    width: 90%;
+    height: 60%;
+    box-shadow: 0 0 20px #ddd;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin-top: 20px;
+  }
+  .bubble-background {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(96, 206, 22);
+    position: absolute;
+    left: 0%;
+    top: 8%;
+    border-radius: 50%;
+    animation-name: bubble-small;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .bubble-background2 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: absolute;
+    right: 0%;
+    top: 8%;
+    border-radius: 50%;
+    animation-name: bubble-small;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  .bubble-background3 {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    position: absolute;
+    left: 20%;
+    top: 8%;
+    border-radius: 50%;
+    animation-name: bubble-small;
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
+
+  .bubble-background4 {
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+    position: absolute;
+    right: 20%;
+    top: 8%;
+    border-radius: 50%;
+    animation-name: bubble-small;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+@keyframes bubble {
+  50% {
+    transform: translateY(calc(100vh - 300px - 8vh));
+  }
+  100% {
+  }
+}
+
+@keyframes bubble-small {
+  50% {
+    transform: translateY(calc(100vh - 200px - 8vh));
+  }
+  100% {
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

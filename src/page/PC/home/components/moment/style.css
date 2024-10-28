@@ -1,0 +1,56 @@
+.moment-left-block {
+  flex: 1;
+  background: linear-gradient(45deg, yellow, pink, purple);
+  height: 100%;
+}
+
+.moment-right-block {
+  flex: 1;
+  background: linear-gradient(45deg, purple, pink, yellow);
+  height: 100%;
+}
+
+.moment-container {
+  width: 550px;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
+}
+
+.moment-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.moment-container::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #c0c0c0;
+}
+
+.upload-field-container {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: relative;
+  overflow: auto;
+  padding: 20px;
+  max-height: 500px;
+}
+
+.upload-field-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.upload-field-container::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #c0c0c0;
+}
+
+.upload-items {
+  width: 70%;
+  height: 50%;
+}
