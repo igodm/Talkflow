@@ -1,0 +1,22 @@
+.tab-bar-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #ddd;
+}
+
+.nav-bar {
+  height: 60px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.red-dot-mobile {
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: red;
+}
